@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Greatsword</title>
+  <title>Gunlance</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -15,7 +15,7 @@
     rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="icon" type="image/x-icon" href="resources/weapons/icons/gsIcon.png">
+  <link rel="icon" type="image/x-icon" href="resources/weapons/icons/gLanceIcon.png">
 </head>
 
 <style>
@@ -33,31 +33,27 @@
   }
 
   .render1 {
-    z-index: 1;
+    z-index: 3;
     position: absolute;
-    max-width: 480px;
-    max-height: 480px;
+    max-width: 640px;
+    max-height: 640px;
   }
 
   .render2 {
+    z-index: 1;
+    position: absolute;
+    max-width: 400px;
+    max-height: 400px;
+    margin-right: 400px;
+  }
+
+  .render3 {
     z-index: 2;
     position: absolute;
     max-width: 400px;
     max-height: 400px;
-    margin-top: 240px;
-  }
-
-  .render3 {
-    z-index: 3;
-    position: absolute;
-    max-width: 480px;
-    max-height: 480px;
-    margin-top: 480px;
-  }
-
-  .gsIcon {
-    max-width: 80px;
-    max-height: 80px;
+    margin-top: 40px;
+    margin-left: 80px;
   }
 
   .monsterIcon {
@@ -78,58 +74,66 @@
   <div class="container">
     <div class="row g-0">
       <div class="col-md-7 col-lg-6 d-flex justify-content-center">
-        <img src="resources/weapons/renders/gs1.png" class="render1 img-fluid d-none d-md-block d-lg-block">
-        <img src="resources/weapons/renders/gs2.png" class="render2 img-fluid d-none d-md-block d-lg-block">
-        <img src="resources/weapons/renders/gs3.png" class="render3 img-fluid d-none d-md-block d-lg-block">
+        <img src="resources/weapons/renders/gl1.png" class="render1 img-fluid d-none d-md-block d-lg-block">
+        <img src="resources/weapons/renders/gl3.png" class="render2 img-fluid d-none d-md-block d-lg-block">
+        <img src="resources/weapons/renders/gl2.png" class="render3 img-fluid d-none d-md-block d-lg-block">
       </div>
 
       <div class="container col-md-5 col-lg-6 col-sm-12">
         <div class="row g-0 text-center">
-          <div class="col-12"><img src="resources/weapons/icons/gsIcon.png" class="img-fluid mb-1">
+          <div class="col-12"><img src="resources/weapons/icons/gLanceIcon.png" class="img-fluid mb-1">
 
-            <div class="container col-9" style="background-color: #9F8F5E; font-size: 24px; border-radius: 6px 6px 0px 0px;">
+            <div class="container col-9"
+              style="background-color: #9F8F5E; font-size: 24px; border-radius: 6px 6px 0px 0px;">
               Weapon Info:
             </div>
 
             <div class="container col-9 d-flex align-items-center justify-content-center p-2"
               style="background-color: #996B4F; font-size: 32px; color: white; font-size: 16px; border-radius: 0px 0px 6px 6px;">
-              Great Sword
+              Gunlance
             </div>
           </div>
 
           <div class="row g-0 text-center">
             <div class="container col-12 mt-1 d-flex align-items-center justify-content-center"
               style="border-style: solid; border-width: 6px; border-color: #996B4F; border-radius: 6px; font-size: 16px; padding: 10px;">
-              Great Swords are one of the heaviest hitters in a hunter’s arsenal. A good pick for the patient, but performs poorly against
-              the speediest of monsters. 
+              First manufactured by the hunters of the Second Generation. The Gunlance is a long, piercing weapon
+              equipped with the ability to fire explosive rounds called "Shelling".
               <br>
-              Great Swords require a certain amount of experience to wield properly and
-              master. To a novice, they may seem very slow and unwieldy. However, in the hands of an experienced hunter,
-              they can prove very useful.
               <br>
-              Blocking, ramming, stunning, this weapon can do it all.
+              Although largely similar to the Lance, this weapon is handled differently with a much larger focus on
+              offense rather than the Lance's defensive focus.
+              Different Gunlances come with different ammo types, Normal, Wide and Long, each also coming with different
+              amounts of ammo that need to be reloaded. However, the Shelling mechanism of the Gunlance has a huge
+              disadvantage, the weapon's sharpness dulls extremely quickly. Don't forget your whetstones, Hunter!
               <br>
-              But Charged Attacks are what its known for.
+              <br>
+              The Gunlance also has access to the Wyvern Fire. An extremely dangerous attack that knocks both Hunter and
+              monster back, this does not consume ammo but leaves a Hunter extremely vulnerable afterwards.
+              <br>
             </div>
           </div>
 
-          <div class="container text-center col-12 mt-2 d-none d-md-block d-lg-block p-2" style="background-color: #9F8F5E; font-size: 16px; border-radius: 6px;">
+          <div class="container text-center col-12 mt-2 d-none d-md-block d-lg-block p-2"
+            style="background-color: #9F8F5E; font-size: 16px; border-radius: 6px;">
             Try hunting these monsters with this weapon!
           </div>
 
           <div class="container mt-2">
             <div class="row">
               <div class="col-4">
-                <img src="resources/monsters/valstraxIcon.png" class="monsterIcon img-fluid d-none d-md-block d-lg-block">
-                <p class="d-none d-md-block d-lg-block">Valstrax</p>
+                <img src="resources/monsters/cephadromeIcon.png"
+                  class="monsterIcon img-fluid d-none d-md-block d-lg-block">
+                <p class="d-none d-md-block d-lg-block">Cephadrome</p>
               </div>
               <div class="col-4">
-                <img src="resources/monsters/zinogreIcon.png" class="monsterIcon img-fluid d-none d-md-block d-lg-block">
-                <p class="d-none d-md-block d-lg-block">Zinogre</p>
+                <img src="resources/monsters/khezuIcon.png"
+                  class="monsterIcon img-fluid d-none d-md-block d-lg-block">
+                <p class="d-none d-md-block d-lg-block">Khezu</p>
               </div>
               <div class="col-4">
-                <img src="resources/monsters/lagiIcon.png" class="monsterIcon img-fluid d-none d-md-block d-lg-block">
-                <p class="d-none d-md-block d-lg-block">Lagiacrus</p>
+                <img src="resources/monsters/graviosIcon.png" class="monsterIcon img-fluid d-none d-md-block d-lg-block">
+                <p class="d-none d-md-block d-lg-block">Gravios</p>
               </div>
             </div>
           </div>

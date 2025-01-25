@@ -15,6 +15,7 @@
     rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="icon" type="image/x-icon" href="resources/ui/equipLogo.png">
 </head>
 
 <style>
@@ -34,7 +35,6 @@
     font-family: Barlow Condensed, serif;
     font-weight: 600;
     font-style: normal;
-    background-color: #9F8F5E;
     font-size: 24px;
     border-radius: 6px 6px;
   }
@@ -44,10 +44,43 @@
     margin: auto;
     opacity: 1;
   }
+
+  .render {
+    position: absolute;
+    max-width: 524px;
+    max-height: 524px;
+  }
+
+  .renderShield {
+    position: relative;
+    max-width: 420px;
+    max-height: 420px;
+    bottom: 32px;
+  }
+
+  .renderSword {
+    position: relative;
+    max-width: 560px;
+    max-height: 560px;
+    top: 64px;
+  }
+
+  .renderSpeed {
+    position: relative;
+    max-width: 480px;
+    max-height: 480px;
+    top: 72px;
+  }
+
+  .p {
+    font-weight: 600;
+    font-family: Almarai, serif;
+    font-size: 24px;
+  }
 </style>
 
 <body>
-  <nav class="navbar bg-black nav-justified nav-underline" data-bs-theme="dark"
+  <nav class="navbar bg-black nav-justified nav-underline sticky-top" data-bs-theme="dark"
     style="color: white; text-decoration: none; height:40px; padding: 8px;">
     <a class="nav-link" href="index.html">Back to Home</a>
   </nav>
@@ -55,7 +88,7 @@
   <p class="title text-center">THE HUNTER'S HANDBOOK</p>
 
   <section>
-    <div class="container text-center">
+    <div class="container col-lg-8 col-sm-12 text-center">
       <div class="row">
         <div class="col">
           <img src="resources/equipCover.png" class="img-fluid equipCover">
@@ -63,81 +96,490 @@
       </div>
     </div>
 
-    <div class="container introMsg text-center col-6 mt-2 mb-2 p-3 d-none d-md-block d-lg-block">
-      It's not safe out there, take one of these!
-    </div>
-
-    <div class="container col-6 text-center p-3" style="background-color: #996B4F;">
+    <div class="container introMsg text-center col-7 mt-2 p-3" style="background-color: #9F8F5E;">
       <div class="row">
-        <div class="col-2 mb-1">
-          <a href="accax.html"><img src="resources/weapons/icons/accaxIcon.png" class="img-fluid" width="80" height="80"></a>
+        <div class="col">
+          It's not safe out there, take one of these!
         </div>
-        <div class="col-2 mb-1">
-          <a href="bow.html"><img src="resources/weapons/icons/bowIcon.png" class="img-fluid" width="80" height="80"></a>
-        </div>
-        <div class="col-2 mb-1">
-          <a href="cb.html"><img src="resources/weapons/icons/cbIcon.png" class="img-fluid" width="80" height="80"></a>
-        </div>
-        <div class="col-2 mb-1">
-          <a href="db.html"><img src="resources/weapons/icons/dbIcon.png" class="img-fluid" width="80" height="80"></a>
-        </div>
-        <div class="col-2 mb-1">
-          <a href="gs.html"><img src="resources/weapons/icons/gsIcon.png" class="img-fluid" width="80" height="80"></a>
-        </div>
-        <div class="col-2 mb-1">
-          <a href="glance.html"><img src="resources/weapons/icons/gLanceIcon.png" class="img-fluid" width="80" height="80"></a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container introMsg text-center col-6 mt-2 mb-2 p-3 d-none d-md-block d-lg-block"
+      style="background-color: #FFB114;">
+      <div class="row">
+        <div class="col">
         </div>
       </div>
     </div>
 
-    <div class="container col-6 text-center p-3" style="background-color: #996B4F;">
+    <div class="container text-center col-6 mt-2">
       <div class="row">
-        <div class="col-2 mb-1">
-          <a href="hammer.html"><img src="resources/weapons/icons/hammerIcon.png" class="img-fluid" width="80" height="80"></a>
+        <div class="col-lg-3 col-sm-4 col-md-3 mb-1 d-none d-md-block d-lg-block">
+          <a href="db.html"><img src="resources/weapons/iconsLarge/dbLarge.png" class="img-fluid "></a>
         </div>
-        <div class="col-2 mb-1">
-          <a href="heavyBg.html"><img src="resources/weapons/icons/heavyBgIcon.png" class="img-fluid" width="80" height="80"></a>
+        <div class="col-lg-3 col-sm-4 col-md-3 mb-1 d-none d-md-block d-lg-block">
+          <a href="gs.html"><img src="resources/weapons/iconsLarge/gsLarge.png" class="img-fluid"></a>
         </div>
-        <div class="col-2 mb-1">
-          <a href="hh.html"><img src="resources/weapons/icons/hhIcon.png" class="img-fluid" width="80" height="80"></a>
+        <div class="col-lg-3 col-sm-4 col-md-3 mb-1 d-none d-md-block d-lg-block">
+          <a href="hammer.html"><img src="resources/weapons/iconsLarge/hammerLarge.png" class="img-fluid"></a>
         </div>
-        <div class="col-2 mb-1">
-          <a href="iglaive.html"><img src="resources/weapons/icons/igIcon.png" class="img-fluid" width="80" height="80"></a>
+        <div class="col-lg-3 col-sm-4 col-md-3 mb-1 d-none d-md-block d-lg-block">
+          <a href="lance.html"><img src="resources/weapons/iconsLarge/lanceLarge.png" class="img-fluid"></a>
         </div>
-        <div class="col-2 mb-1">
-          <a href="lance.html"><img src="resources/weapons/icons/lanceIcon.png" class="img-fluid" width="80" height="80"></a>
+        <div class="col-lg-4 col-sm-4 col-md-4 mb-1 d-none d-md-block d-lg-block">
+          <a href="lightBg.html"><img src="resources/weapons/iconsLarge/lbgLarge.png" class="img-fluid"></a>
         </div>
-        <div class="col-2 mb-1">
-          <a href="lightbg.html"><img src="resources/weapons/icons/lightBgIcon.png" class="img-fluid" width="80" height="80"></a>
+        <div class="col-lg-4 col-sm-4 col-md-4 mb-1 d-none d-md-block d-lg-block">
+          <a href="sns.html"><img src="resources/weapons/iconsLarge/snsLarge.png" class="img-fluid"></a>
+        </div>
+        <div class="col-lg-4 col-sm-4 col-md-4 mb-1 d-none d-md-block d-lg-block">
+          <a href="heavyBg.html"><img src="resources/weapons/iconsLarge/hbgLarge.png" class="img-fluid"></a>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="container introMsg text-center col-6 mt-2 mb-2 p-3 d-none d-md-block d-lg-block"
+      style="background-color: #FFB114;">
+      <div class="row">
+        <div class="col">
         </div>
       </div>
     </div>
 
-    <div class="container col-6 text-center p-3" style="background-color: #996B4F;">
+    <div class="container text-center col-6 mt-2">
       <div class="row">
-        <div class="col-2 mb-1">
-          <a href="ls.html"><img src="resources/weapons/icons/lsIcon.png" class="img-fluid" width="80" height="80"></a>
+        <div class="col-lg-4 col-sm-4 col-md-4 mb-1 d-none d-md-block d-lg-block">
+          <a href="iglaive.html"><img src="resources/weapons/iconsLarge/igLarge.png" class="img-fluid"></a>
         </div>
-        <div class="col-2 mb-1">
-          <a href="mediumBg.html"><img src="resources/weapons/icons/midBgIcon.png" class="img-fluid" width="80" height="80"></a>
+        <div class="col-lg-4 col-sm-4 col-md-4 mb-1 d-none d-md-block d-lg-block">
+          <a href="hh.html"><img src="resources/weapons/iconsLarge/hhLarge.png" class="img-fluid"></a>
         </div>
-        <div class="col-2 mb-1">
-          <a href="ms.html"><img src="resources/weapons/icons/msIcon.png" class="img-fluid" width="80" height="80"></a>
+        <div class="col-lg-4 col-sm-4 col-md-4 mb-1 d-none d-md-block d-lg-block">
+          <a href="bow.html"><img src="resources/weapons/iconsLarge/bowLarge.png" class="img-fluid"></a>
         </div>
-        <div class="col-2 mb-1">
-          <a href="sns.html"><img src="resources/weapons/icons/snsIcon.png" class="img-fluid" width="80" height="80"></a>
+        <div class="col-lg-3 col-sm-4 col-md-3 mb-1 d-none d-md-block d-lg-block">
+          <a href="ls.html"><img src="resources/weapons/iconsLarge/lsLarge.png" class="img-fluid"></a>
         </div>
-        <div class="col-2 mb-1">
-          <a href="swax.html"><img src="resources/weapons/icons/swaxIcon.png" class="img-fluid" width="80" height="80"></a>
+        <div class="col-lg-3 col-sm-4 col-md-3 mb-1 d-none d-md-block d-lg-block">
+          <a href="swax.html"><img src="resources/weapons/iconsLarge/swaxLarge.png" class="img-fluid"></a>
         </div>
-        <div class="col-2 mb-1">
-          <a href="tonfa.html"><img src="resources/weapons/icons/tonfaIcon.png" class="img-fluid" width="80" height="80"></a>
+        <div class="col-lg-3 col-sm-4 col-md-3 mb-1 d-none d-md-block d-lg-block">
+          <a href="cb.html"><img src="resources/weapons/iconsLarge/cbLarge.png" class="img-fluid"></a>
+        </div>
+        <div class="col-lg-3 col-sm-4 col-md-3 mb-1 d-none d-md-block d-lg-block">
+          <a href="glance.html"><img src="resources/weapons/iconsLarge/glLarge.png" class="img-fluid"></a>
         </div>
       </div>
     </div>
+
+    <div class="container introMsg text-center col-6 mt-2 mb-2 p-3 d-none d-md-block d-lg-block"
+      style="background-color: #FFB114;">
+      <div class="row">
+        <div class="col">
+        </div>
+      </div>
+    </div>
+
+    <div class="container text-center col-6 mt-2 d-none d-md-block d-lg-block">
+      <div class="row">
+        <div class="col-lg-3 col-sm-4 col-md-3 mb-1 d-none d-md-block d-lg-block">
+          <a href="ms.html"><img src="resources/weapons/iconsLarge/msLarge.png" class="img-fluid"></a>
+        </div>
+        <div class="col-lg-3 col-sm-4 col-md-3 mb-1 d-none d-md-block d-lg-block">
+          <a href="tonfa.html"><img src="resources/weapons/iconsLarge/tonfasLarge.png" class="img-fluid"></a>
+        </div>
+        <div class="col-lg-3 col-sm-4 col-md-3 mb-1 d-none d-md-block d-lg-block">
+          <a href="mediumBg.html"><img src="resources/weapons/iconsLarge/mbgLarge.png" class="img-fluid"></a>
+        </div>
+        <div class="col-lg-3 col-sm-4 col-md-3 mb-1 d-none d-md-block d-lg-block">
+          <a href="accax.html"><img src="resources/weapons/iconsLarge/accaxLarge.png" class="img-fluid"></a>
+        </div>
+      </div>
+    </div>
+
+    <section class="d-lg-none d-md-none d-sm-block">
+      <div class="container introMsg text-center col-6 mb-2 p-3 d-lg-none d-md-none d-sm-block"
+        style="background-color:#9F8F5E;">
+        <div class="row">
+          <div class="col">
+            <p>
+              Best for beginners!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container text-center p-3" style="background-color:#FFB114;">
+        <div class="row p-3">
+          <div class="col-6 col-sm-3 d-flex align-items-center"
+            style="font-family: Barlow Condensed, serif; font-size: 32px;">
+            Greatsword
+          </div>
+          <a href="gs.html" class="col-6 col-sm-3">
+            <img src="resources/weapons/icons/gsIcon.png" class="img-fluid">
+        </div>
+        </a>
+        <div class="row p-3">
+          <div class="col-6 col-sm-3 d-flex align-items-center"
+            style="font-family: Barlow Condensed, serif; font-size: 32px;">
+            Longsword
+          </div>
+          <a href="ls.html" class="col-6 col-sm-3">
+            <img src="resources/weapons/icons/lsIcon.png" class="img-fluid">
+        </div>
+        </a>
+        <div class="row p-3">
+          <div class="col-6 col-sm-3 d-flex align-items-center"
+            style="font-family: Barlow Condensed, serif; font-size: 32px;">
+            Sword and Shield
+          </div>
+          <a href="sns.html" class="col-6 col-sm-3">
+            <img src="resources/weapons/icons/snsIcon.png" class="img-fluid">
+        </div>
+        </a>
+        <div class="row p-3">
+          <div class="col-6 col-sm-3 d-flex align-items-center"
+            style="font-family: Barlow Condensed, serif; font-size: 32px;">
+            Dual Blades
+          </div>
+          <a href="db.html" class="col-6 col-sm-3">
+            <img src="resources/weapons/icons/dbIcon.png" class="img-fluid">
+        </div>
+        </a>
+        <div class="row p-3">
+          <div class="col-6 col-sm-3 d-flex align-items-center"
+            style="font-family: Barlow Condensed, serif; font-size: 32px;">
+            Light Bowgun
+          </div>
+          <a href="lightBg.html" class="col-6 col-sm-3">
+            <img src="resources/weapons/icons/lightBgIcon.png" class="img-fluid">
+        </div>
+        </a>
+        <div class="row p-3">
+          <div class="col-6 col-sm-3 d-flex align-items-center"
+            style="font-family: Barlow Condensed, serif; font-size: 32px;">
+            Heavy Bowgun
+          </div>
+          <a href="heavyBg.html" class="col-6 col-sm-3">
+            <img src="resources/weapons/icons/heavyBgIcon.png" class="img-fluid">
+        </div>
+        </a>
+      </div>
+      </div>
+    </section>
+
+    <section class="d-lg-none d-md-none d-sm-block mt-2">
+      <div class="container introMsg text-center col-6 mb-2 d-lg-none d-md-none d-sm-block"
+        style="background-color:#9F8F5E;">
+        <div class="row">
+          <div class="col">
+            <p>
+              A great second pick!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container text-center p-3" style="background-color:#FFB114;">
+        <div class="row p-3">
+          <div class="col-6 col-sm-3 d-flex align-items-center"
+            style="font-family: Barlow Condensed, serif; font-size: 32px;">
+            Bow
+          </div>
+          <a href="bow.html" class="col-6 col-sm-3">
+            <img src="resources/weapons/icons/bowIcon.png" class="img-fluid">
+        </div>
+        </a>
+        <div class="row p-3">
+          <div class="col-6 col-sm-3 d-flex align-items-center"
+            style="font-family: Barlow Condensed, serif; font-size: 32px;">
+            Lance
+          </div>
+          <a href="lance.html" class="col-6 col-sm-3">
+            <img src="resources/weapons/icons/lanceIcon.png" class="img-fluid">
+        </div>
+        </a>
+        <div class="row p-3">
+          <div class="col-6 col-sm-3 d-flex align-items-center"
+            style="font-family: Barlow Condensed, serif; font-size: 32px;">
+            Charge Blade
+          </div>
+          <a href="cb.html" class="col-6 col-sm-3">
+            <img src="resources/weapons/icons/cbIcon.png" class="img-fluid">
+        </div>
+        </a>
+        <div class="row p-3">
+          <div class="col-6 col-sm-3 d-flex align-items-center"
+            style="font-family: Barlow Condensed, serif; font-size: 32px;">
+            Hunting Horn
+          </div>
+          <a href="hh.html" class="col-6 col-sm-3">
+            <img src="resources/weapons/icons/hhIcon.png" class="img-fluid">
+        </div>
+        </a>
+        <div class="row p-3">
+          <div class="col-6 col-sm-3 d-flex align-items-center"
+            style="font-family: Barlow Condensed, serif; font-size: 32px;">
+            Gunlance
+          </div>
+          <a href="glance.html" class="col-6 col-sm-3">
+            <img src="resources/weapons/icons/gLanceIcon.png" class="img-fluid">
+        </div>
+        </a>
+        <div class="row p-3">
+          <div class="col-6 col-sm-3 d-flex align-items-center"
+            style="font-family: Barlow Condensed, serif; font-size: 32px;">
+            Hammer
+          </div>
+          <a href="hammer.html" class="col-6 col-sm-3">
+            <img src="resources/weapons/icons/hammerIcon.png" class="img-fluid">
+        </div>
+        </a>
+      </div>
+      </div>
+    </section>
+
+    <section class="d-lg-none d-md-none d-sm-block mt-2">
+      <div class="container introMsg text-center col-6 mb-2 d-lg-none d-md-none d-sm-block"
+        style="background-color:#9F8F5E;">
+        <div class="row">
+          <div class="col">
+            <p>
+              Master these and nothing will stop you.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container text-center p-3" style="background-color:#FFB114;">
+        <div class="row p-3">
+          <div class="col-6 col-sm-3 d-flex align-items-center"
+            style="font-family: Barlow Condensed, serif; font-size: 32px;">
+            Switch Axe
+          </div>
+          <a href="swax.html" class="col-6 col-sm-3">
+            <img src="resources/weapons/icons/swaxIcon.png" class="img-fluid">
+        </div>
+        </a>
+        <div class="row p-3">
+          <div class="col-6 col-sm-3 d-flex align-items-center"
+            style="font-family: Barlow Condensed, serif; font-size: 32px;">
+            Magnet Spike
+          </div>
+          <a href="ms.html" class="col-6 col-sm-3">
+            <img src="resources/weapons/icons/msIcon.png" class="img-fluid">
+        </div>
+        </a>
+        <div class="row p-3">
+          <div class="col-6 col-sm-3 d-flex align-items-center"
+            style="font-family: Barlow Condensed, serif; font-size: 32px;">
+            Insect Glaive
+          </div>
+          <a href="iglaive.html" class="col-6 col-sm-3">
+            <img src="resources/weapons/icons/igIcon.png" class="img-fluid">
+        </div>
+        </a>
+        <div class="row p-3">
+          <div class="col-6 col-sm-3 d-flex align-items-center"
+            style="font-family: Barlow Condensed, serif; font-size: 32px;">
+            Medium Bowgun
+          </div>
+          <a href="mediumBg.html" class="col-6 col-sm-3">
+            <img src="resources/weapons/icons/midBgIcon.png" class="img-fluid">
+        </div>
+        </a>
+        <div class="row p-3">
+          <div class="col-6 col-sm-3 d-flex align-items-center"
+            style="font-family: Barlow Condensed, serif; font-size: 32px;">
+            Tonfas
+          </div>
+          <a href="tonfa.html" class="col-6 col-sm-3">
+            <img src="resources/weapons/icons/tonfaIcon.png" class="img-fluid">
+        </div>
+        </a>
+        <div class="row p-3">
+          <div class="col-6 col-sm-3 d-flex align-items-center"
+            style="font-family: Barlow Condensed, serif; font-size: 32px;">
+            Accel Axe
+          </div>
+          <a href="accax.html" class="col-6 col-sm-3">
+            <img src="resources/weapons/icons/accaxIcon.png" class="img-fluid">
+        </div>
+        </a>
+      </div>
+      </div>
+    </section>
+
+    <div class="container introMsg text-center col-6 mt-2 mb-2 p-3 d-none d-md-block d-lg-block"
+      style="background-color: #FFB114;">
+      <div class="row">
+        <div class="col">
+        </div>
+      </div>
+    </div>
+
+    <div class="container introMsg text-center col-7 mt-3 p-3" style="background-color: #9F8F5E;">
+      <div class="row">
+        <div class="col">
+          Too many options? Check out some weapon summaries below!
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section>
+    <div class="container text-center col-lg-12">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12 mt-5">
+          <h1 class="p-3"
+            style="background-color: #FFB114; font-size: 32px; border-radius: 6px; font-family: Barlow Condensed, serif;">
+            Forgotten Armory
+          </h1>
+          <div class="container col-6 col-md-6 col-sm-12 mt-3">
+            <h5>
+              Bowguns are a hunter’s trusty companion since the days of the First Fleet. However, the middle child of
+              the Bowgun tree, the Medium Bowgun, has long been consumed by the sands of time.
+            </h5>
+            <h5>
+              Praised for its modularity, a Medium Bowgun can be wielded like a Heavy Bowgun but have the speed and
+              weight of a Light variant. However, the way of crafting this weapon has long been lost to time.
+            </h5>
+            <h6>
+              From top to bottom:
+              Light Bowgun, Medium Bowgun, Heavy Bowgun
+            </h6>
+          </div>
+        </div>
+
+        <div class="col-6 text-center">
+          <div class="col-12"><img src="resources/forgoArmory.png"
+              class="render img-fluid d-none d-lg-block">
+          </div>
+        </div>
+  </section>
+
+  <section class="mt-5">
+    <div class="container text-center col-lg-12">
+      <div class="row">
+        <div class="col-6 text-center">
+          <div class="col-12"><img src="resources/mightyMorphers.png"
+              class="render img-fluid d-none d-lg-block">
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 col-md-12 col-sm-12 mt-5">
+          <h1 class="p-3"
+            style="background-color: #FFB114; font-size: 32px; border-radius: 6px; font-family: Barlow Condensed, serif;">
+            Mighty Morphers
+          </h1>
+          <div class="container col-6 col-md-6 col-sm-12 mt-3">
+            <h5>
+              The 2-in-1 package deal weapons. Sword? Axe? They got them all. Combining both offense and defense in one
+              weapon, these weapons are sure to keep you safe in nearly every situation.
+            </h5>
+            <h6>
+              Includes:
+              Tonfas, Charge Blade, Magnet Spike, Switch Axe, Accel Axe
+            </h6>
+          </div>
+        </div>
 
   </section>
 
+  <section class="mt-5">
+    <div class="container text-center col-lg-12">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12 mt-5">
+          <h1 class="p-3"
+            style="background-color: #FFB114; font-size: 32px; border-radius: 6px; font-family: Barlow Condensed, serif;">
+            Shields Up!
+          </h1>
+          <div class="container col-6 col-md-6 col-sm-12 mt-3">
+            <h5>
+              “Shields up, Ironbreakers!”, a war cry of every hunter that decides to carry a shield, whether that shield
+              comes with your Lance or is attached to your Heavy Bowgun, their focus is to always be on guard.
+            </h5>
+            <h6>
+              Includes:
+              Lance, Gunlance, Heavy Bowgun
+            </h6>
+          </div>
+        </div>
+
+        <div class="col-6 text-center">
+          <div class="col-12"><img src="resources/shieldsUp.png"
+              class="renderShield img-fluid d-none d-lg-block">
+          </div>
+        </div>
+  </section>
+
+  <section class="mt-5">
+    <div class="container text-center col-lg-12">
+      <div class="row">
+        <div class="col-6 text-center">
+          <div class="col-12"><img src="resources/patienceIsAVirtue.png"
+              class="renderSword img-fluid d-none d-lg-block">
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <h1 class="p-3"
+            style="background-color: #FFB114; font-size: 32px; border-radius: 6px; font-family: Barlow Condensed, serif;">
+            Patience is a virtue
+          </h1>
+          <div class="container col-6 col-md-6 col-sm-12">
+            <h5>
+              Some weapons require you to wait for the perfect opportunity to strike. Bob, weave, then SLASH and BONK to
+              your heart’s content. You know what they say, the best things are worth the wait.
+            </h5>
+            <h6>
+              Includes:
+              Great Sword, Longsword, Hammer
+            </h6>
+          </div>
+        </div>
+  </section>
+
+  <section class="mt-5">
+    <div class="container text-center col-lg-12">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <h1 class="p-3"
+            style="background-color: #FFB114; font-size: 32px; border-radius: 6px; font-family: Barlow Condensed, serif;">
+            The Untouchables
+          </h1>
+          <div class="container col-6 col-md-6 col-sm-12 mt-3">
+            <h5>
+              When there is a need for speed, these are what you choose.
+            </h5>
+            <h5 class="mt-3 mb-3">
+              Equipped with the ability to constantly be out
+              of harm’s way, while dealing constant Elemental damage and also supporting allies, these weapons are
+              perfect for hunters who know how to position in a hunt and take advantage of the wildness of a monster.
+            </h5>
+            <h6>
+              Includes:
+              Bow, Dual Blades, Insect Glaive, Light Bowgun, Medium Bowgun
+            </h6>
+          </div>
+        </div>
+
+        <div class="col-6 text-center">
+          <div class="col-12"><img src="resources/theUntouchables.png"
+              class="renderSpeed img-fluid d-none d-lg-block">
+          </div>
+        </div>
+  </section>
+
+  <footer>
+
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
